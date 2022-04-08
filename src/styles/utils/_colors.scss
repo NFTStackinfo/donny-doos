@@ -1,0 +1,11 @@
+.white {
+  @include createColors(hsl(var(--clr-white)))
+}
+
+.black {
+  @include createColors(hsl(var(--clr-black)))
+}
+
+.primary {
+  @include createColors(hsl(var(--clr-dark-blue)))
+}

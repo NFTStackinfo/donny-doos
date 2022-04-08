@@ -1,0 +1,69 @@
+.ff {
+  &-primary {
+    font-family: var(--ff-primary);
+  }
+
+  &-secondary {
+    font-family: var(--ff-secondary);
+  }
+}
+
+
+.ls {
+  &-1 {
+    letter-spacing: 0.08em;
+  }
+
+  &-2 {
+    letter-spacing: 0.1em;
+  }
+}
+
+.fs {
+  &-900 {
+    font-size: var(--fs-900);
+    line-height: 1.165;
+  }
+
+  &-700 {
+    font-size: var(--fs-700);
+    line-height: 1.25;
+  }
+
+  &-600 {
+    font-size: var(--fs-600);
+    line-height: 1.333;
+  }
+
+  &-500 {
+    font-size: var(--fs-500);
+    line-height: 1.4;
+  }
+
+  &-400 {
+    font-size: var(--fs-400);
+    line-height: 1.5;
+  }
+}
+
+.fw {
+  &-normal {
+    font-weight: 400;
+  }
+
+  &-bold {
+    font-weight: 600;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text {
+  &-center {
+    @include createResponsiveClasses {
+      text-align: center;
+    }
+  }
+}

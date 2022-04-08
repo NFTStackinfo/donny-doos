@@ -1,0 +1,114 @@
+.mint{
+  &-section-main {
+    position: relative;
+    z-index: 1;
+    background-color: hsl(0, 0%, 0%);
+
+    &__banner {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsl(0, 0%, 0%);
+        opacity: 0.5;
+        z-index: 3;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background:linear-gradient(161.57deg, rgba(0, 0, 0, 0) 52.54%, #000000 79.56%);
+        z-index: 2;
+      }
+
+      @include screen($s-md) {
+        position: relative;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.mint-container {
+  position: relative;
+  z-index: 10;
+  padding-top: 112px;
+  padding-bottom: 60px;
+
+  > h1 {
+    font-size: 32px;
+    line-height: 40px;
+
+    @include screen($s-sm) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  @include screen($s-md) {
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.mint-button-container {
+  .mint-btn, .mint-count-btn {
+    width: 100%;
+
+    @include screen($s-sm) {
+      width: fit-content;
+    }
+  }
+
+  .mint-count-btn {
+    padding: 8px 16px;
+
+    .icon-plus, .icon-minus {
+      height: 32px;
+      width: 32px;
+      padding: 4px;
+    }
+
+    button {
+      padding: 0;
+    }
+
+    .dec {
+      margin-right: 16px;
+
+      // @include screen($s-sm) {
+      //   margin-right: 24px;
+      // }
+    }
+
+    .inc {
+      margin-left: 16px;
+
+      // @include screen($s-sm) {
+      //   margin-left: 24px;
+      // }
+    }
+  }
+}
+

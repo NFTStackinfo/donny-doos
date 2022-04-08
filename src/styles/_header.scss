@@ -1,0 +1,298 @@
+.header {
+  position: fixed;
+  background-color: hsl(var(--clr-black) / .2);
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  @media screen and (max-width: 1199px) {
+    &.open {
+      background: linear-gradient(236.96deg, #868BA9 25.02%, #949BC7 100%);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 999;
+
+      .header__menu {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 192px;
+
+        ul {
+          flex-direction: column;
+          gap: 32px;
+
+          li {
+            font-size: var(--fs-900);
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: fit-content;
+    height: 29px;
+    display: block;
+    cursor: pointer;
+
+    @include screen($s-md) {
+      height: 43px;
+    }
+
+    img {
+      // width: 100%;
+      height: 100%;
+
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include screen($s-lg) {
+      display: inline-block;
+    }
+
+    &-list {
+      >li {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .btn--nav-menu {
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    display: block;
+    @include screen($s-lg) {
+      display: none;
+    }
+  }
+
+}
+
+
+// .header {
+//     height: 72px;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 99;
+//
+//     &::after {
+//         content: '';
+//         display: block;
+//         height: 72px;
+//         width: 100%;
+//         background: linear-gradient(356.45deg, rgba(0, 0, 0, 0) 2.93%, #000000 97.09%);
+//         opacity: 0.6;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         z-index: -1;
+//     }
+//
+//     .container,
+//     .header-content {
+//         height: 100%;
+//     }
+//
+//     .hamburger {
+//         display: none;
+//     }
+//
+//     .header-content {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//     }
+//
+//     .logo-wrapper {
+//         flex: 1;
+//     }
+//
+//     .logo {
+//         width: 100%;
+//         height:29px;
+//         display: block;
+//
+//         @include screen($s-md) {
+//             height: 43px;
+//         }
+//
+//         img {
+//             // width: 100%;
+//             height: 100%;
+//
+//         }
+//     }
+//
+//     .header-nav {
+//         flex: 2;
+//
+//         .header-nav-inner {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//
+//         .header-nav-list {
+//             display: flex;
+//             margin: 0;
+//
+//             > li {
+//                 cursor: pointer;
+//                 font-weight: 700;
+//                 line-height: 1;
+//                 margin-right: 24px;
+//                 font-size: 16px;
+//                 position: relative;
+//                 text-transform: capitalize;
+//
+//                 &:last-child {
+//                     margin-right: 0;
+//                 }
+//
+//                 &:after {
+//                     content: "";
+//                     position: absolute;
+//                     bottom: -4px;
+//                     left: 0;
+//                     height: 2px;
+//                     width: 100%;
+//                     background: transparent;
+//                     transition: 0.3s;
+//                 }
+//
+//                 &:hover {
+//                     &:after {
+//                         //background: ${({ theme }) => theme.colors.black};
+//                     }
+//                 }
+//             }
+//         }
+//
+//     }
+//
+//     .social {
+//         flex: 1;
+//         text-align: right;
+//     }
+//
+//     .social-mobile {
+//         display: none;
+//     }
+// }
+//
+// @media (max-width: 991px) {
+//     .header {
+//         .hamburger {
+//             margin-left: 20px;
+//             display: inline-block;
+//             cursor: pointer;
+//             border: 0;
+//             background: transparent;
+//         }
+//
+//         &.open {
+//             .header-nav {
+//                 height: calc(100% - 72px);
+//             }
+//         }
+//
+//         .header-nav {
+//             position: fixed;
+//             top: 72px;
+//             right: 0;
+//             bottom: 0;
+//             left: 0;
+//             overflow-y: auto;
+//             z-index: 100;
+//             height: 0;
+//             transition: height 0.5s;
+//             background-color: hsl(var(--clr-black));
+//
+//             &::-webkit-scrollbar {
+//                 display: none !important;
+//             }
+//
+//             .header-nav-inner {
+//                 flex-direction: column;
+//                 align-items: inherit;
+//                 justify-content: space-between;
+//                 height: calc(100vh - 72px);
+//                 padding-top: 60px;
+//             }
+//
+//             .header-nav-list {
+//                 flex-direction: column;
+//                 padding: 0 20px;
+//                 align-items: flex-start;
+//
+//                 > li {
+//                     margin-right: 0;
+//                     font-size: 64px;
+//                     width: 100%;
+//
+//                     &:not(:first-child) {
+//                         margin-top: 40px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//
+// }
+//
+// @media (max-width: 767px) {
+//     .header {
+//         .header-nav {
+//             .header-nav-list {
+//
+//                 > li {
+//                     font-size: 48px;
+//                 }
+//             }
+//         }
+//     }
+// }
+//
+// @media (max-width: 575px) {
+//     .header {
+//
+//         .social-desktop {
+//             display: none;
+//         }
+//
+//         .header-nav {
+//             .header-nav-list {
+//
+//                 > li {
+//                     font-size: 48px;
+//                 }
+//             }
+//         }
+//
+//         .social-mobile {
+//             display: block;
+//             padding: 16px;
+//
+//             .btn {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }

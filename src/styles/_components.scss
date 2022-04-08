@@ -1,0 +1,167 @@
+.container {
+  padding-inline: 1em;
+  margin-inline: auto;
+  max-width: 70rem;
+  position: relative;
+  z-index: 1;
+
+  @include screen($s-md) {
+    padding-inline: 2.5em;
+  }
+}
+
+.btn {
+  pointer-events: auto;
+  cursor: pointer;
+  background: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 40px;
+  color: hsl(var(--clr-white));
+  transition: 0.2s ease-in-out;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-500);
+  font-weight: 400;
+  width: fit-content;
+  text-decoration: none;
+
+  &--secondary {
+    border: 1px solid hsl(var(--clr-white));
+
+    &:hover {
+      // color: hsl(var(--clr-dark-blue));
+      // background-color: hsl(var(--clr-white));
+    }
+  }
+
+  &--primary {
+    color: hsl(var(--clr-black));
+    background: hsl(var(--clr-white));
+
+    &:hover {
+      background-color: hsla(210, 95%, 93%, 1);
+    }
+  }
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 262px;
+  flex-shrink: 0;
+
+  .team-member__image {
+    border-radius: 50%;
+  }
+
+  .team-member__name {
+    border-bottom: 1px solid hsl(var(--clr-black))
+  }
+}
+
+.questions {
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+
+  .question-item {
+    border-bottom: 1px solid #FFFFFF;
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &__toggle {
+        transition: 500ms ease-in-out;
+        height: min-content;
+
+        &.open {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: all .5s ease-in-out;
+    }
+  }
+}
+
+
+.roadmap-item {
+  max-width: 526px;
+  color: hsl(var(--clr-white) / .5);
+  &.loaded {
+    color: hsl(var(--clr-white));
+  }
+}
+
+.roadmap-line {
+  height: 100%;
+  width: 4px;
+  background-color: hsl(var(--clr-white));
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+
+  &__end-circle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: hsl(var(--clr-white));
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &.active {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: hsl(var(--clr-white));
+        z-index: -1;
+        filter: blur(4px);
+      }
+    }
+  }
+
+
+  &__progress {
+    background-color: hsl(var(--clr-white));
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 100%;
+      filter: blur(4px);
+      background-color: hsl(var(--clr-white));
+      z-index: -1;
+    }
+
+
+  }
+}
+
+
+

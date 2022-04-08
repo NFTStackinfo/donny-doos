@@ -1,0 +1,46 @@
+@mixin createResponsiveClasses() {
+  & {
+    @content;
+  }
+
+  @media screen and (min-width: $s-sm) {
+    &-sm {
+      @content;
+    }
+  }
+  @media screen and (min-width: $s-md) {
+    &-md {
+      @content;
+    }
+  }
+  @media screen and (min-width: $s-lg) {
+    &-lg {
+      @content ;
+    }
+  }
+  @media screen and (min-width: $s-xl) {
+    &-xl {
+      @content ;
+    }
+  }
+}
+
+@mixin screen($size) {
+  @media screen and (min-width: $size) {
+    @content
+  }
+}
+
+@mixin createColors($color) {
+  &-bg {
+    background: $color;
+  }
+
+  &-text {
+    color: $color;
+  }
+
+  &-border {
+    border-color: $color;
+  }
+}

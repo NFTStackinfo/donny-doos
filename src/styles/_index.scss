@@ -1,0 +1,16 @@
+body, #root, .main-content-wrapper, .page-wrapper {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-white));
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-content-wrapper {
+  background: linear-gradient(178.8deg, #DCEEFF 2.55%, #949BC7 20.05%, #737896 34.28%, #868BA9 62.66%, #949BC7 79.27%, #DCEEFF 98.01%);
+}
+
+body > iframe {
+  display: none !important;
+}

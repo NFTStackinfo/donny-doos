@@ -1,0 +1,44 @@
+.w {
+  &-20 {
+    &-p {
+      @include createResponsiveClasses {
+        width: 20%;
+      }
+    }
+  }
+  &-30 {
+    &-p {
+      @include createResponsiveClasses {
+        width: 30%;
+      }
+    }
+  }
+  &-40 {
+    &-p {
+      @include createResponsiveClasses {
+        width: 40%;
+      }
+    }
+  }
+  &-60 {
+    &-p {
+      @include createResponsiveClasses {
+        width: 60%;
+      }
+    }
+  }
+  &-80 {
+    &-p {
+      @include createResponsiveClasses {
+        width: 80%;
+      }
+    }
+  }
+  &-100 {
+    &-p {
+      @include createResponsiveClasses {
+        width: 100%;
+      }
+    }
+  }
+}

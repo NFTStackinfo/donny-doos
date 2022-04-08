@@ -1,0 +1,54 @@
+.mint {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+
+  &Dec, &Inc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #c4c4c4;
+    background: 0 0;
+    border: 1px solid #c4c4c4;
+    padding: 8px 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 21px;
+  }
+
+  &Dec {
+    margin-right: 24px;
+  }
+
+  &Inc {
+    margin-left: 24px;
+  }
+}
+
+.btn {
+  color: #c4c4c4;
+  background: 0 0;
+  border: 1px solid #c4c4c4;
+  padding: 8px 16px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.fallback {
+  font-size: 14px;
+  color: red;
+  margin-top: 8px;
+  text-align: center;
+}
