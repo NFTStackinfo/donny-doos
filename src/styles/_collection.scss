@@ -60,12 +60,26 @@
       }
 
       &:not(.slick-center) {
-        opacity: .5;
+
+
+        .img-thumbnail {
+          position: relative;
+          z-index: 1;
+
+          &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            background-color: hsl(var(--clr-dark-blue) / .3);
+          }
+        }
+
       }
 
       &.slick-center {
         position: relative;
-        z-index: 1;
+        z-index: 5;
       }
     }
   }
@@ -75,12 +89,14 @@
       width: 450px;
 
       .item {
-        margin: 30px 0;
+        margin: 13.5% 0;
       }
 
       &.slick-center {
+
+
         img {
-          transform: scale(1.18);
+          transform: scale(1.26);
         }
       }
 
@@ -112,12 +128,6 @@
     .img-slider {
       .slick-slide {
         width: 360px;
-
-        &.slick-center {
-          img {
-            transform: scale(1.18);
-          }
-        }
 
         img {
           transition: 0.8s;

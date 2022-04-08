@@ -95,7 +95,7 @@
 
       .phase-2 {
         &__roadmap {
-          .roadmap-item {
+          .roadmap-item-wrapper {
             &:nth-child(4) {
               padding-bottom: 24px;
 
@@ -121,7 +121,7 @@
             grid-area: 1 / 1 / 7 / 2;
           }
 
-          .roadmap-item {
+          .roadmap-item-wrapper {
             text-align: left;
 
             &:not(:first-child) {
@@ -163,7 +163,7 @@
               grid-area: 1 / 2 / 7 / 3;
             }
 
-            .roadmap-item {
+            .roadmap-item-wrapper {
               text-align: left;
 
               &:nth-child(even) {
