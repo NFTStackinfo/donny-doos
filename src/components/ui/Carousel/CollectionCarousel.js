@@ -26,7 +26,7 @@ const CollectionCarousel = () => {
         variableWidth: true,
         nextArrow: <Arrow direction={"right"}  />,
         prevArrow: <Arrow direction={"left"}  />,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000
     };
 

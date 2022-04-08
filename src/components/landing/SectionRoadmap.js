@@ -1,7 +1,7 @@
 import React, {forwardRef, useEffect, useRef, useState} from 'react';
 import roadmapData from "../../data/roadmap-data";
 import {normalizeRange} from "../../utils/math";
-import {LineNeon, PhaseStart} from "../ui/icons";
+import { PhaseStart} from "../ui/icons";
 import Fade from "react-reveal/Fade";
 import SectionRoadmapItem from "./SectionRoadmapItem";
 
