@@ -5,7 +5,7 @@ function TheFooter(props) {
     return (
         <footer className="section footer margin-bottom-6">
             <div className="container flex flex-col items-center">
-                <ul className="list-style-none flex gap-4 p-0">
+                <ul className="list-style-none flex gap-4 padding-0">
                     <li>
                         <a href="" rel="noreferrer" target="_blank">
                             <Twitter fill="#000000"/>

@@ -39,7 +39,9 @@ const CollectionCarousel = () => {
                 {[...Array(8)].map((item, index) => {
                     return (
                         <div className="item" key={`carousel-${index}`}>
-                            <img src={collectionImagesData[index]} alt="Donny Doos" />
+                            <div className="img-thumbnail">
+                                <img src={collectionImagesData[index]} alt="Donny Doos" />
+                            </div>
                         </div>
                     )
                 })}

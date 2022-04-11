@@ -8,6 +8,7 @@ import Close from "./Close";
 import Plus from "./Plus";
 import Minus from "./Minus";
 import PhaseStart from "./PhaseStart";
+import LineNeon from "./LineNeon";
 
 export {
     ArrowNext,
@@ -19,5 +20,6 @@ export {
     Close,
     Plus,
     Minus,
-    PhaseStart
+    PhaseStart,
+    LineNeon
 }
