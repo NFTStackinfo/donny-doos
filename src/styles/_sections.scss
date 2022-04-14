@@ -8,9 +8,10 @@
   &-main {
     width: 100%;
 
-    img {
+    .section-main__banner {
       width: 100%;
       height: auto;
+      //pointer-events: none;
     }
   }
 

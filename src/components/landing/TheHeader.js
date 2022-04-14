@@ -38,12 +38,12 @@ const AppHeader = ({onLinkClick}) => {
                 </nav>
                 <ul className="header__socials-list list-style-none flex gap-4">
                     <li>
-                        <a href="">
+                        <a href="#">
                             <Discord/>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <Twitter/>
                         </a>
                     </li>
