@@ -7,11 +7,31 @@
 
   &-main {
     width: 100%;
+    position: relative;
+
+    .container {
+      position: absolute;
+      inset: 0;
+    }
 
     .section-main__banner {
       width: 100%;
       height: auto;
       //pointer-events: none;
+    }
+    .section-main__mute {
+      position: absolute;
+      //left: 0;
+      top: 120px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      width: 54px;
+      img {
+        display: block;
+        width: 100%;
+
+      }
     }
   }
 
