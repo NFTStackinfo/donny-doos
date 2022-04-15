@@ -1,4 +1,4 @@
-import React, {forwardRef, useState} from 'react';
+import React, {forwardRef} from 'react';
 import CollectionCarousel from "../ui/Carousel/CollectionCarousel";
 import {CollectionElement} from "../ui/icons";
 

@@ -2,7 +2,6 @@ import React, {useEffect, useRef, useState} from 'react';
 import TheHeader from "../components/mint/TheHeader";
 import ThePreloader from "../components/landing/ThePreloader";
 import SectionMain from "../components/mint/SectionMain";
-import SectionCollection from "../components/landing/SectionCollection";
 
 function Landing(props) {
     const [scrollTo, setScrollTo] = useState(null)
@@ -43,9 +42,6 @@ function Landing(props) {
                     <>
                         <TheHeader onLinkClick={handleLinkClick}/>
                         <SectionMain ref={mainRef}/>
-                        {/*<div className="main-content-wrapper">*/}
-                        {/*    <SectionCollection/>*/}
-                        {/*</div>*/}
                     </>
                 )
                 : <ThePreloader loaded={(state) => setIsLoaded(state)}/>

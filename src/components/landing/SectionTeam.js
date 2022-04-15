@@ -7,7 +7,7 @@ function TeamMember({name, description, image, link = null}) {
         <div className="team-member">
             <img src={image} alt={name} className="team-member__image"/>
             {link
-                ? <a href={link} target="_blank" className="team-member__name uppercase black-text fw-bold fs-500 margin-top-6">{name}</a>
+                ? <a href={link} target="_blank" rel="noreferrer" className="team-member__name uppercase black-text fw-bold fs-500 margin-top-6">{name}</a>
                 : <h3 className="team-member__name uppercase black-text fw-bold fs-500 margin-top-6">{name}</h3>
             }
             <div className="team-member__description text-center black-text margin-top-4">

@@ -65,7 +65,7 @@ const SectionRoadmap = forwardRef((props, ref) => {
                             <div className="phase-1__roadmap margin-top-3" ref={$phase1Roadmap}>
                                 {roadmapData.phase1.map((item, index) => (
                                     <div className="roadmap-item-wrapper">
-                                        <Fade bottom key={index}>
+                                        <Fade bottom key={item.title}>
                                             <SectionRoadmapItem {...item}/>
                                         </Fade>
                                     </div>
@@ -91,7 +91,7 @@ const SectionRoadmap = forwardRef((props, ref) => {
                             <div className="phase-2__roadmap margin-top-3" ref={$phase2Roadmap}>
                                 {roadmapData.phase2.map((item, index) => (
                                     <div className="roadmap-item-wrapper">
-                                        <Fade bottom key={index}>
+                                        <Fade bottom key={item.title}>
                                             <SectionRoadmapItem {...item}/>
                                         </Fade>
                                     </div>
