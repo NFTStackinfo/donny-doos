@@ -37,7 +37,7 @@ function SectionRoadmapItem({title, description}) {
                         className="roadmap-item__title ff-primary fs-600 ls-2 uppercase fw-normal"
                     >{title}</h3>
                     <p
-                        className="roadmap-item__description margin-top-6"
+                        className="roadmap-item__description margin-top-6 ff-secondary fw-normal fs-400"
                     >{description}</p>
 
                     <div className="roadmap-item__content-overlay"
@@ -47,7 +47,7 @@ function SectionRoadmapItem({title, description}) {
                             className="roadmap-item__title ff-primary fs-600 ls-2 uppercase fw-normal"
                         >{title}</h3>
                         <p
-                            className="roadmap-item__description margin-top-6"
+                            className="roadmap-item__description margin-top-6 ff-secondary fw-normal fs-400"
                         >{description}</p>
                     </div>
                 </div>
