@@ -113,6 +113,13 @@
       overflow: hidden;
     }
   }
+
+  &__description {
+    margin-top: 24px !important;
+    font-family: var(--ff-secondary) !important;
+    font-size: var(--fs-400) !important;
+    font-weight: 400 !important;
+  }
 }
 
 .roadmap-line {
