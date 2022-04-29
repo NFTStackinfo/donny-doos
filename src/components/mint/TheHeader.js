@@ -43,7 +43,7 @@ const TheHeader = ({onLinkClick}) => {
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://twitter.com/TheDonnyDoos" rel="noreferrer" target="_blank">
                             <Twitter/>
                         </a>
                     </li>

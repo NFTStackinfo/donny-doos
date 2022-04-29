@@ -7,7 +7,7 @@ function TheFooter(props) {
             <div className="container flex flex-col items-center">
                 <ul className="list-style-none flex gap-4 padding-0">
                     <li>
-                        <a href="#" rel="noreferrer" target="_blank">
+                        <a href="https://twitter.com/TheDonnyDoos" rel="noreferrer" target="_blank">
                             <Twitter fill="#000000"/>
                         </a>
                     </li>
