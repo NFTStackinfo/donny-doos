@@ -49,6 +49,10 @@
       height: 43px;
     }
 
+    @include screen($s-lg) {
+      flex: 1;
+    }
+
     img {
       // width: 100%;
       height: 100%;
@@ -61,24 +65,40 @@
 
     @include screen($s-lg) {
       display: inline-block;
+      flex: 2;
     }
 
     &-list {
+      justify-content: center;
       >li {
         cursor: pointer;
       }
     }
   }
 
-  .btn--nav-menu {
-    padding: 0;
-    margin: 0;
-    border: none;
+  &__socials-list {
+    li {
+      &.btn--nav-menu {
+        .btn {
+          padding: 0;
+          margin: 0;
+          border: none;
 
-    display: block;
+          display: block;
+        }
+        @include screen($s-lg) {
+          display: none;
+        }
+      }
+    }
+
+
     @include screen($s-lg) {
-      display: none;
+      flex: 1;
+      justify-content: flex-end;
+
     }
   }
+
 
 }

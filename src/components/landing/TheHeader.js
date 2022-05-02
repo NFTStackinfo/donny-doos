@@ -37,18 +37,19 @@ const AppHeader = ({onLinkClick}) => {
                     </ul>
                 </nav>
                 <ul className="header__socials-list list-style-none flex gap-4">
-                    <li>
-                        <a href="#">
-                            <Discord/>
-                        </a>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <a href="#">*/}
+                    {/*        <Discord/>*/}
+                    {/*    </a>*/}
+                    {/*</li>*/}
                     <li>
                         <a href="https://twitter.com/TheDonnyDoos" rel="noreferrer" target="_blank">
                             <Twitter/>
                         </a>
                     </li>
-                    <li>
-                        <button className="btn btn--nav-menu"
+                    <li className='btn--nav-menu'>
+
+                        <button className="btn"
                                 onClick={() => toggleMenu()}
                         >
                             {isMenuOpen ? <Close/> : <Menu/>}

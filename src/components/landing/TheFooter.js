@@ -11,11 +11,11 @@ function TheFooter(props) {
                             <Twitter fill="#000000"/>
                         </a>
                     </li>
-                    <li>
-                        <a href="#" rel="noreferrer" target="_blank">
-                            <Discord fill="#000000"/>
-                        </a>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <a href="#" rel="noreferrer" target="_blank">*/}
+                    {/*        <Discord fill="#000000"/>*/}
+                    {/*    </a>*/}
+                    {/*</li>*/}
                 </ul>
 
                 <p className="text-center black-text margin-top-4">©All rights reserved. 2022</p>

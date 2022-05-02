@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
+import scrollIntoView from "scroll-into-view";
 import TheHeader from "../components/landing/TheHeader";
 import ThePreloader from "../components/landing/ThePreloader";
 import SectionMain from "../components/landing/SectionMain";
@@ -22,9 +23,11 @@ function Landing(props) {
 
     useEffect(() => {
         if (scrollTo) {
-            refMapping[scrollTo]?.current?.scrollIntoView({
-                behavior: "smooth",
-            })
+          scrollIntoView(refMapping[scrollTo]?.current, {
+            align: {
+              top: 0,
+            },
+          });
             setScrollTo(false)
         }
     }, [scrollTo])
