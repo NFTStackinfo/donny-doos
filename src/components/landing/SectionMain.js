@@ -16,16 +16,6 @@ const SectionMain = forwardRef(({visionRef}, ref) => {
     }
   }
 
-  useEffect(() => {
-   window.addEventListener('scroll', () => {
-     const pageY = window.scrollY
-     const videoHeight = customRef.current.clientHeight
-     console.log(pageY)
-     console.log(videoHeight)
-
-   })
-  }, [])
-
   const onVideoEnd = () => {
     const pageY = window.scrollY
     const videoHeight = customRef.current.clientHeight
