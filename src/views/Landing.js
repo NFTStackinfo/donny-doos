@@ -17,6 +17,7 @@ function Landing(props) {
     const teamRef = useRef(null)
     const mainRef = useRef(null)
 
+
     useEffect(() => {
         window.history.scrollRestoration = "manual"
     }, [])
@@ -49,7 +50,7 @@ function Landing(props) {
                 ? (
                     <>
                         <TheHeader onLinkClick={handleLinkClick}/>
-                        <SectionMain ref={mainRef}/>
+                        <SectionMain ref={mainRef} visionRef={visionRef}/>
                         <div className="main-content-wrapper">
                             <SectionCollection/>
                             <SectionVision ref={visionRef}/>
