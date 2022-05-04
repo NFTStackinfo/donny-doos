@@ -14,6 +14,7 @@ function Landing(props) {
     const [isLoaded, setIsLoaded] = useState(false)
     const roadmapRef = useRef(null)
     const visionRef = useRef(null)
+    const collectionRef = useRef(null)
     const teamRef = useRef(null)
     const mainRef = useRef(null)
 
@@ -50,9 +51,9 @@ function Landing(props) {
                 ? (
                     <>
                         <TheHeader onLinkClick={handleLinkClick}/>
-                        <SectionMain ref={mainRef} visionRef={visionRef}/>
+                        <SectionMain ref={mainRef} collectionRef={collectionRef}/>
                         <div className="main-content-wrapper">
-                            <SectionCollection/>
+                            <SectionCollection ref={collectionRef}/>
                             <SectionVision ref={visionRef}/>
                             <SectionRoadmap ref={roadmapRef}/>
                             <SectionTeam ref={teamRef}/>

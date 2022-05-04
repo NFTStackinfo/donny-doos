@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect } from 'react'
 import scrollIntoView from 'scroll-into-view'
-const SectionMain = forwardRef(({visionRef}, ref) => {
+const SectionMain = forwardRef(({collectionRef}, ref) => {
   const [muted, setMuted] = React.useState('mute')
   const customRef = React.useRef(null)
 
@@ -20,7 +20,7 @@ const SectionMain = forwardRef(({visionRef}, ref) => {
     const pageY = window.scrollY
     const videoHeight = customRef.current.clientHeight
     if(videoHeight > pageY) {
-      scrollIntoView(visionRef?.current, {
+      scrollIntoView(collectionRef?.current, {
         align: {
           top: 0,
         }
