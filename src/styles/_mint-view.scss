@@ -36,9 +36,46 @@
         position: relative;
       }
 
-      img {
+      video {
         width: 100%;
       }
+    }
+
+
+  }
+}
+
+.mute-btn-container {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+
+  .hero-video-mute-btn {
+    position: absolute;
+    //left: 0;
+    top: 0;
+    z-index: 10;
+    left: 2.5em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 54px;
+
+    display: none;
+
+    @include screen(48rem) {
+      display: block;
+    }
+
+    @include screen($s-md) {
+      left: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
     }
   }
 }

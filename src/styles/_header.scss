@@ -72,6 +72,11 @@
       justify-content: center;
       >li {
         cursor: pointer;
+        color: var(--clr-white);
+
+        >a {
+          color: var(--clr-white);
+        }
       }
     }
   }
